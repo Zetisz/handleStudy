@@ -22,33 +22,40 @@
 
 // 1
 
-const szinek = ['Coral', 'Crimson', 'DarkSlateBlue', 'DarkSeaGreen', 'Pink'];
+// const szinek = ['Coral', 'Crimson', 'DarkSlateBlue', 'DarkSeaGreen', 'Pink'];
 // 
 // document.body.style.backgroundColor = szinek[Math.floor(Math.random() * szinek.length)];
 // let valasztSzin = setInterval(() => {
 //     document.body.style.backgroundColor = szinek[Math.floor(Math.random() * szinek.length)];
 // }, 10000)
 
+
 // 2
 
-let idoNyomva = 0;
-let intervall;
-document.getElementById('szam').addEventListener('click', () => {
-    clearTimeout(intervall);
-    const rand = Math.floor(Math.random() * 10000) + 5000
-    intervall = setTimeout(() => {
-        document.body.style.backgroundColor = szinek[Math.floor(Math.random() * szinek.length)];
-        idoNyomva = new Date();
-    }, rand)
-})
 
-document.getElementById('proba').addEventListener('click', () => {
-    const kulonbseg = (new Date()) - idoNyomva;
-    let label = document.getElementById('talal');
-    if (kulonbseg > 4000) {
-        label.textContent = 'Túl korai';
-    }
-    else {
-        label.textContent = kulonbseg + " ms";
-    }
-})
+// let idoNyomva = 0;
+// let intervall;
+// document.getElementById('szam').addEventListener('click', () => {
+//     clearTimeout(intervall);
+//     const rand = Math.floor(Math.random() * 10000) + 5000
+//     intervall = setTimeout(() => {
+//         document.body.style.backgroundColor = szinek[Math.floor(Math.random() * szinek.length)];
+//         idoNyomva = new Date();
+//     }, rand)
+// })
+// 
+// document.getElementById('proba').addEventListener('click', () => {
+//     const kulonbseg = (new Date()) - idoNyomva;
+//     let label = document.getElementById('talal');
+//     if (kulonbseg > 4000) {
+//         label.textContent = 'Túl korai';
+//     }
+//     else {
+//         label.textContent = kulonbseg + " ms";
+//     }
+// })
+
+
+// 3
+
+
